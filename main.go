@@ -28,7 +28,7 @@ func (g *Game) Start() {
 	var guessingVal int
 	currentGuess := 0
 
-	for ; currentGuess < g.numberOfGuesses; currentGuess++ {
+	for ; currentGuess < g.numberOfGuesses-1; currentGuess++ {
 		fmt.Println("Guess the number: ")
 		fmt.Scanln(&guessingVal)
 
