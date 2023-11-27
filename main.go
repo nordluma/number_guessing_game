@@ -38,13 +38,12 @@ func (g *Game) Start() {
 			fmt.Println("The number is smaller")
 		} else {
 			g.rightGuess = true
-			currentGuess++
 			break
 		}
 	}
 
 	if g.rightGuess {
-		fmt.Printf("You won\nAmount of Guesses: %d\n", currentGuess)
+		fmt.Printf("You won\nAmount of Guesses: %d\n", currentGuess+1)
 	} else {
 		fmt.Printf("Game Over\nThe right number was: %d\n", g.targetValue)
 	}
